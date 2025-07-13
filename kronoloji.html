@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+    body {
+    
+      font-family: 'Georgia', serif;
+      color: #5a2a27;
+      padding: 40px 20px;
+      margin: 0;
+      overflow-y: scroll;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: normal;
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+      color: #c94f4f;
+      text-shadow: 1px 1px 4px #f7c4c4;
+    }
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 30px;
+    }
+    /* Dikey çizgi */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, #f9a6a6, #f56a6a);
+      border-radius: 2px;
+    }
+    .event {
+      position: relative;
+      margin-bottom: 50px;
+      padding-left: 50px;
+    }
+    /* Daire */
+    .event::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 5px;
+      width: 28px;
+      height: 28px;
+      background: radial-gradient(circle at center, #ffb3b3, #e86e6e);
+      border-radius: 50%;
+      box-shadow: 0 0 8px #f79a9a;
+      border: 3px solid #fff;
+    }
+    /* Tarih stili */
+    .event time {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #b33a3a;
+      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 8px;
+      font-style: normal;
+      text-shadow: 1px 1px 2px transparent;
+    }
+    /* Başlık */
+    .event h3 {
+      margin: 0 0 6px;
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: #802020;
+    }
+    /* Açıklama */
+    .event p {
+      margin: 0;
+      font-size: 1rem;
+      color: rgb(44, 44, 44);
+      line-height: 1.5;
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
+    .timeline {
+        position: absolute;
+        top:10%;
+        right:20%
+       
+      }
+      .event {
+        padding-left: 40px;
+         color: rgb(44, 44, 44);
+         background-color: rgb(255,255,255,0.6);
+
+      }
+      .event::before {
+        left: 0;
+         color: rgb(44, 44, 44);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html" class="button" target="_blank">İçimizdekiler...</a>
+  <a href="index2.html" class="button" target="_blank">Biz❤️</a>
+   <a href="sözler.html"     class="button" target="_blank"> Hislerim</a>
+</div>
+  </nav>
+ <div class="timeline">
+    <div class="event">
+      <time>10 Kasım 2024</time>
+      <h3>Tanışmamız</h3>
+      <p>Hayattaki ruh eşini arayan bir çocukla kızın başladı hikayesi.</p>
+    </div>
+    <div class="event">
+      <time>22 Kasım 2024</time>
+      <h3>Tatlı Heyecanlı İlk buluşma</h3>
+      <p>İkimzde çok heyecanlydık o gün hayatım.<br>
+        Ama güzel bir ömrün başlangıcıymış demekki...</p>
+    </div>
+    <div class="event">
+      <time>25 Kasım 2024</time>
+      <h3>Kalplerimizin Bir Oluşu</h3>
+      <p>İki vücudun tek ruh olduğunu açıkça itiraf ettiğimiz ve anladığımız gün.
+        İki çocuğun beraber oynamaya başladığı..."Biz olduk galiba"... </p>
+    </div>
+    <div class="event">
+      <time>13 Aralık 2024</time>
+      <h3>Sevgili Olarak İlk Buluşmamız</h3>
+      <p>Ah canım sevgilim.İlk sarılmamızı nasıl unutabilirim.Sanki 40 yıldır hasretini çekiyomuşum gibi hisettmiştim.Çok güzeldi çok...Senin boynunda hiç çıkarmadığın kolyeyi ,benimde 
+        bileklerimden hiç çıkarmadığım toka ve bilekliği alışım.Ne kadar mutlu olmuştum sen onları bileğime takarken anlatamam.
+        "Fiziken yanyana olamasak bile ruhlarımız ay ışığında dans ediyor olacaklar"
+      </p>
+    </div>
+      <div class="event">
+      <time>6 Ocak 2025</time>
+      <h3>Keobsa Gidişimiz</h3>
+      <p>Çok güzel sohbetlerimizi ettiğimiz o güzel sıcak cafe.Orda daha çok sohbetimiz ve anılarımız olucak.</p>
+    </div>
+    <div class="event">
+      <time>8 Ocak 2025</time>
+      <h3>Ay Parçamın  Doğumgünü</h3>
+      <p>Beraber ilk kez kutladığımız doğum günümüz.Daha niceleri olucak....Senin bana içtenlikle teşekkür edişini.Bebeklerden masum gülüşünü unutamam hayatım.</p>
+       </div>
+      <div class="event">
+      <time>10 Ocak 2025</time>
+      <h3>HBVAL Ziyaretimiz</h3>
+      <p>Okul anılarını yad edip aynada fotoğraf çekildik.HBVALin birbirimize en güzel hediyesi bizmişiz meğerse...</p>
+   
+    </div>
+    <div class="event">
+      <time>26 Ocak 2025</time>
+      <h3>Beraber Gelecek Hayali Kurduğumuz İlk An</h3>
+      <p>"Ben evi alırım barınak olur o evi yuva yapar" Saat: 02.25</p>
+    </div>
+    <div class="event">
+      <time>29 Ocak 2025</time>
+      <h3>Buda Benim Doğumgünüm</h3>
+      <p>Seninle beraber hayata yeniden yeniden ve yeniden başladığımı çok iyi şekilde anladığım gün bebeğim.</p>
+    </div>
+    <div class="event">
+      <time>11 Şubat 2025</time>
+      <h3>Dragosa Gidişimiz</h3>
+      <p>Senin staj yerine baktık ve harika bir gün geçirdik.İlk kez beraber lahmacun yedik.Sen balıkçı oldun.Çok tatlıydın ve çok güzeldin.Hala öylesin tabi...</p>
+    </div>
+    <div class="event">
+      <time>7 Mart 2025</time>
+      <h3>Pierre Loti</h3>
+      <p>Beraber tepeye çıktık ve İstanbulu seyrettik.Bordo bluzun sana çok yakışıyo bebeğim.o zamanki fotolara baktığımda</p>
+    </div>
+    <div class="event">
+      <time>2 Mayıs 2025</time>
+      <h3>Senin İlk Stajın</h3>
+      <p>Bebeğimi ziyarete geldim.Melek gibiydin o gün beyazlar içinde.Ama hocasına yakalandık🤠</p>
+    </div>
+    <div class="event">
+      <time>12 Haziran 2025</time>
+      <h3>Galata Kulesine Çıkışımız</h3>
+      <p>Geleceğe bir adım daha yaklaştığımız gün.Aşkımızı ilişkimizi daha büyüleyici ve mucizevi hale getirdiğimiz o gün</p>
+    </div>
+    <div class="event">
+      <time>Nice Tarihler...</time>
+      <h3>Nice Konular...</h3>
+      <p>Seninle beraber bir ömür sonsuz tane anı...</p>
+    </div>
+</div>
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
